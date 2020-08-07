@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@onflow/fcl": "^0.0.46",
+    "@onflow/sdk": "^0.0.30",
+    "@onflow/types": "^0.0.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -14,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev:wallet": "set PK=96b3a941ea3b836e4149ff157dcc8703a8b3fe76f920e1f000d8235606348f51 && fcl-wallet",
+    "local:emulator": "flow emulator start -v --http-port 8080 -p 3570"
   },
   "eslintConfig": {
     "extends": "react-app"
